@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4BB21BC2AEBB2C400C87FE8 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BB21BA2AEBB2C400C87FE8 /* KeychainWrapper.swift */; };
+		B4BB21BD2AEBB2C400C87FE8 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BB21BB2AEBB2C400C87FE8 /* KeychainItemAccessibility.swift */; };
 		B4CB633C2AEBAFCD00A116A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB633B2AEBAFCD00A116A9 /* AppDelegate.swift */; };
 		B4CB633E2AEBAFCD00A116A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB633D2AEBAFCD00A116A9 /* SceneDelegate.swift */; };
 		B4CB63402AEBAFCD00A116A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB633F2AEBAFCD00A116A9 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B4BB21BA2AEBB2C400C87FE8 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		B4BB21BB2AEBB2C400C87FE8 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 		B4CB63382AEBAFCD00A116A9 /* ARKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CB633B2AEBAFCD00A116A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4CB633D2AEBAFCD00A116A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4BB21B82AEBB28C00C87FE8 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				B4BB21B92AEBB29900C87FE8 /* keychain */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		B4BB21B92AEBB29900C87FE8 /* keychain */ = {
+			isa = PBXGroup;
+			children = (
+				B4BB21BB2AEBB2C400C87FE8 /* KeychainItemAccessibility.swift */,
+				B4BB21BA2AEBB2C400C87FE8 /* KeychainWrapper.swift */,
+			);
+			path = keychain;
+			sourceTree = "<group>";
+		};
 		B4CB632F2AEBAFCD00A116A9 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +77,40 @@
 		B4CB633A2AEBAFCD00A116A9 /* ARKit */ = {
 			isa = PBXGroup;
 			children = (
-				B4CB633B2AEBAFCD00A116A9 /* AppDelegate.swift */,
-				B4CB633D2AEBAFCD00A116A9 /* SceneDelegate.swift */,
-				B4CB633F2AEBAFCD00A116A9 /* ViewController.swift */,
-				B4CB63412AEBAFCD00A116A9 /* Main.storyboard */,
+				B4BB21B82AEBB28C00C87FE8 /* models */,
+				B4CB63502AEBB13B00A116A9 /* delegates */,
+				B4CB63512AEBB13F00A116A9 /* controllers */,
+				B4CB634F2AEBB13200A116A9 /* storyboards */,
 				B4CB63442AEBAFD400A116A9 /* Assets.xcassets */,
-				B4CB63462AEBAFD400A116A9 /* LaunchScreen.storyboard */,
 				B4CB63492AEBAFD400A116A9 /* Info.plist */,
 			);
 			path = ARKit;
+			sourceTree = "<group>";
+		};
+		B4CB634F2AEBB13200A116A9 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B4CB63412AEBAFCD00A116A9 /* Main.storyboard */,
+				B4CB63462AEBAFD400A116A9 /* LaunchScreen.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		B4CB63502AEBB13B00A116A9 /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				B4CB633B2AEBAFCD00A116A9 /* AppDelegate.swift */,
+				B4CB633D2AEBAFCD00A116A9 /* SceneDelegate.swift */,
+			);
+			path = delegates;
+			sourceTree = "<group>";
+		};
+		B4CB63512AEBB13F00A116A9 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B4CB633F2AEBAFCD00A116A9 /* ViewController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +185,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4CB63402AEBAFCD00A116A9 /* ViewController.swift in Sources */,
+				B4BB21BC2AEBB2C400C87FE8 /* KeychainWrapper.swift in Sources */,
 				B4CB633C2AEBAFCD00A116A9 /* AppDelegate.swift in Sources */,
+				B4BB21BD2AEBB2C400C87FE8 /* KeychainItemAccessibility.swift in Sources */,
 				B4CB633E2AEBAFCD00A116A9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
